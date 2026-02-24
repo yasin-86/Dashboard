@@ -1,0 +1,32 @@
+.adress{
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(191, 191, 191);
+    border-radius: 10px;
+    padding: 20px;
+}
+.adress h3{
+    font-size: 22px;
+}
+.empty-adress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 130px;
+}
+
+.empty-adress p{
+    padding: 10px;
+}
+.empty-adress a{
+    border: 1px solid red;
+    width: 130px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: red;
+}

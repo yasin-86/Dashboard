@@ -1,0 +1,36 @@
+.point{
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(191, 191, 191);
+    border-radius: 10px;
+    padding: 20px;
+}
+.list{
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list h3{
+    font-size: 23px;
+}
+.list-like a{
+    padding: 15px;
+    color: #797a7d;
+    font-size: 20px;
+}
+
+.list-like{
+    border-bottom: 1px solid rgb(191, 191, 191);
+    padding: 20px;
+}
+.empty-like{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 130px;
+}
