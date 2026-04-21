@@ -1,0 +1,64 @@
+
+.html {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Tahoma", sans-serif;
+  background: radial-gradient(circle at center, #1b2735 0%, #090a0f 100%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.error-container {
+  padding: 20px;
+}
+.error-code {
+  font-size: 150px;
+  font-weight: 800;
+  background: linear-gradient(to bottom, #ff00cc, #3333ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 20px rgba(255, 0, 204, 0.3);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.error-message {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #e0e0e0;
+}
+.error-desc {
+  font-size: 16px;
+  color: #888;
+  margin-bottom: 30px;
+}
+.home-button {
+  width: 200px;
+  display: inline-block;
+  padding: 12px 30px;
+  background: transparent;
+  border: 2px solid #3333ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.home-button:hover {
+  background: #3333ff;
+  box-shadow: 0 0 20px #3333ff;
+  transform: scale(1.05);
+}

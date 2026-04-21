@@ -11,14 +11,18 @@ import DashboardList from "./pages/DashboardList/DashboardList";
 import DashboardComments from "./pages/DashboardComments/DashboardComments";
 import DashboardAdresses from "./pages/DashboardAdresses/DashboardAdresses";
 import DashboardGift from "./pages/DashboardGift/DashboardGift";
+import Signup from "./pages/Signup/Signup";
+import NotFound from "./pages/NotFound/NotFound";
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
+          <Route path="Signup" element={<Signup/>}/>
           <Route element={<MainLayout />}>
             <Route index element={<Home />} />
             <Route path="/dashboard" element={<Panel />} />
+            
 
             <Route path="dashboard" element={<DashboardLayout />}>
               <Route index element={<DashboardHome />} />
@@ -29,6 +33,7 @@ function App() {
               <Route path="giftcard" element={<DashboardGift/>} />
             </Route>
           </Route>
+          <Route path="*" element={<NotFound/>}/>
         </Routes>
       </BrowserRouter>
     </>

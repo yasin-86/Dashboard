@@ -1,0 +1,134 @@
+.body {
+  font-family: "Vazirmatn", sans-serif;
+  background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.login-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2.5rem 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 350px;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.login-form h2 {
+  color: #4a4a4a;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+  text-align: right;
+  position: relative;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding-right: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #8a2be2;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(138, 43, 226, 0.3);
+}
+
+.input-group input[type="email"] {
+  padding-left: 40px;
+}
+.input-group input[type="password"] {
+  padding-left: 40px;
+}
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.88rem;
+  margin-bottom: 1.8rem;
+  flex-wrap: wrap;
+}
+
+.options label {
+  display: flex;
+  align-items: center;
+  color: #555;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.options input[type="checkbox"] {
+  margin-left: 8px;
+  accent-color: #8a2be2;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+}
+
+.options a {
+  color: #8a2be2;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.options a:hover {
+  color: #6a1e9f;
+  text-decoration: underline;
+}
+
+button {
+  padding: 14px;
+  background: linear-gradient(90deg, #8a2be2 0%, #5e36d4 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  transition:
+    background 0.3s ease,
+    transform 0.2s ease;
+  letter-spacing: 0.5px;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #6a1e9f 0%, #4a24a5 100%);
+  transform: translateY(-2px);
+
+  button:active {
+    transform: translateY(0px);
+  }
+
+  .input-group input::placeholder {
+    color: #bbb;
+    font-size: 0.9rem;
+  }
+}

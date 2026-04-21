@@ -43,6 +43,9 @@ function Navbar() {
         <li>
             <NavLink to="/dashboard">Panel</NavLink>
         </li>
+        <li>
+            <NavLink to="Signup">Sign up</NavLink>
+        </li>
       </ul>
     </nav>
   )
